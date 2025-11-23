@@ -12,8 +12,8 @@ const bot = new Telegraf(BOT_TOKEN);
 // start handler
 export async function handleStartCommand(ctx) {
   const COMMAND = "/start";
-  const channelUrl = "t.me/cheapproxxx";
-  const targetUrl = "https://t.me/+Dmm79NDmvYQzYWRk";
+  const channelUrl = "t.me/unlimited_proxies_1";
+  const targetUrl = "t.me/+Dmm79NDmvYQzYWRk";
 
   // Welcome message with Markdown formatting
   const reply = `
@@ -22,7 +22,16 @@ export async function handleStartCommand(ctx) {
 
   try {
     await ctx.reply(reply, {
-      parse_mode: "Markdown"
+      parse_mode: "Markdown",
+      reply_markup: {
+        inline_keyboard: [
+          [
+            {
+              text: "Join Unlimited Proxies",
+              url: channelUrl,
+            },
+          ]
+        ],
       },
     });
     console.log(`Reply to ${COMMAND} command sent successfully.`);
