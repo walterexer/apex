@@ -12,8 +12,8 @@ const bot = new Telegraf(BOT_TOKEN);
 // start handler
 export async function handleStartCommand(ctx) {
   const COMMAND = "/start";
-  const channelUrl = "t.me/unlimited_proxies_1";
-  const targetUrl = "t.me/+Dmm79NDmvYQzYWRk";
+  const channelUrl = "t.me/lumiproxx";
+  const targetUrl = "t.me/+bh6cjlQScoRmYTA0";
 
   // Welcome message with Markdown formatting
   const reply = `
